@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    package="com.venturus.plugin">
+
+    <uses-permission android:name="com.android.systemui.permission.PLUGIN" />
+
+    <application>
+        <service android:name=".ClockPlugin"
+            android:label="ClockPlugin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.systemui.action.PLUGIN_CLOCK_PROVIDER" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

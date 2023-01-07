@@ -1,0 +1,18 @@
+android_app {
+    name: "SystemUIClockPlugin",
+    resource_dirs: [
+        "res",
+    ],
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+        "src/**/I*.aidl",
+    ],
+    libs: [
+        "SystemUIPluginLib",
+    ],
+    platform_apis: true,
+    system_ext_specific: true,
+    certificate: "platform",
+    privileged: true,
+}
